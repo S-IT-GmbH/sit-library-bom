@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>dev.sitconsulting</groupId>
+        <artifactId>sit-base-bom</artifactId>
+        <version>0.0.1</version>
+    </parent>
+
+    <groupId>dev.sitconsulting</groupId>
+    <artifactId>sit-library-bom</artifactId>
+    <version>0.0.1</version>
+    <packaging>pom</packaging>
+
+    <organization>
+        <name>S-IT Application Engineering &amp; Consulting GmbH</name>
+        <url>https://s-it.consulting</url>
+    </organization>
+    <inceptionYear>2025</inceptionYear>
+    <licenses>
+        <license>
+            <name>MIT</name>
+            <url>https://raw.githubusercontent.com/S-IT-GmbH/sit-library-bom/refs/heads/main/LICENSE.md</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <description>S-IT parent project for all projects that should be published.</description>
+    <url>https://github.com/S-IT-GmbH/${project.artifactId}</url>
+
+    <build>
+        <plugins>
+            <!-- Plugins not wanted for the inheriting projects can be removed here with the inherited tag for the plugin -->
+            <!-- for example: -->
+            <!-- <plugin> -->
+            <!--   <inherited>false</inherited> -->
+            <!--   <groupId>packageGroupId<groupId> -->
+            <!--   <artifactId>packageArtifactId<artifactId> -->
+            <!--   <version>packageVersion</version> -->
+            <!-- </plugin> -->
+        </plugins>
+    </build>
+</project>
