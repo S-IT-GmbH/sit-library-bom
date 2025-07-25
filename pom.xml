@@ -28,6 +28,7 @@
         </license>
     </licenses>
 
+    <name>sit-library-bom</name>
     <description>S-IT parent project for all projects that should be published.</description>
     <url>https://github.com/S-IT-GmbH/${project.artifactId}</url>
 
